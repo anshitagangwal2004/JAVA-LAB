@@ -1,0 +1,25 @@
+class complex{
+    int real;
+    int imag;
+    complex(int real, int imag)
+    {
+        this.real= real;
+        this.imag= imag;
+    }
+    public static complex add (complex x, complex y)
+    {
+        return new complex (x.real+y.real,x.imag+y.imag);
+    }
+}
+   public class example
+    {
+        public static void main(String[]args)
+        {
+            complex x= new complex(3,4);
+            complex y= new complex(2,3);
+            complex z= complex.add(x,y);
+            System.out.println(z.real);  
+    }
+}
+
+    
