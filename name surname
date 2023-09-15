@@ -1,0 +1,25 @@
+class name{
+    String name;
+    String surname;
+    name(String name,String surname)
+    {
+       this.name=name;
+       this.surname=surname;
+    }
+    static name  alpha(name x ,name y)
+    {
+        return new name(x.name+x.surname,y.surname);
+        
+    }
+       
+}
+
+public class Eg1{
+    public static void main(String []args)
+    {
+        name x = new name ("aishwariya", "rai");
+        name y = new name ( "abhishek", "bacchan");
+        name z =name.alpha(x,y);
+    System.out.println(z.name+z.surname);
+    }
+}
