@@ -1,0 +1,13 @@
+class animal{
+    public int legCount;
+    public void display(){
+        System.out.println("i am an animal");
+        System.out.println(" i have" + legCount + " legs");
+}
+}
+public class Main{
+    public static void main(String[]args){
+        animal a = new animal();
+        a.legCount=4;
+        a.display();
+    }
