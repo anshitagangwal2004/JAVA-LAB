@@ -1,0 +1,25 @@
+class animal{
+    public void eat(){
+        System.out.println("i can eat");
+}
+}
+class Dog extends animal{
+    public void eat(){
+        super.eat();
+        System.out.println("I eat dog food ");
+    }
+    public void bark(){
+        System.out.println("i can bark");
+    }
+}
+    class main {
+        public static void main (String[]args){
+            //creat an object of the subclass
+            Dog labrador= new Dog();
+            //call the eat()method
+            labrador.eat();
+            labrador.bark();
+        }
+    }
+    
+   
