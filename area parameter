@@ -1,0 +1,31 @@
+class shape{
+    void area(){
+        System.out.println("the area is ");
+       
+    }
+    void parameter(int num){
+        System.out.println(" the parameter is ;" + num);
+       
+    }
+}
+ class circle extends shape{
+    void area(){
+        System.out.println("this is area");
+       
+    }
+    void parameter ( double num){
+        System.out.println("the parameter here is ;" + num);
+       
+    }
+}
+public class square{
+    public static void main( String []args){
+       shape a = new shape();
+        shape  p = new shape();
+         
+         a.parameter(5);
+         p.parameter (7);
+         
+        a.area();
+         p.area();
+    }
