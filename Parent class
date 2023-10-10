@@ -1,0 +1,32 @@
+class Parent{
+    void display(){
+        System.out.println("this is the parent class");
+       
+    }
+    void show(int num){
+        System.out.println(" the number in the parent class is ;" + num);
+       
+    }
+}
+ class child extends Parent{
+    void display(){
+        System.out.println("this is child classss");
+       
+    }
+    void show ( double num){
+        System.out.println("the number int the child class is ;" + num);
+       
+    }
+}
+public class Main{
+    public static void main( String []args){
+        Parent parent = new Parent();
+        Parent childs = new child();
+         
+         parent.show(5);
+         childs.show (7);
+         
+         parent.display();
+         childs.display();
+    }
+}
