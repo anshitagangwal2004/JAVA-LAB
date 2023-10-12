@@ -1,0 +1,17 @@
+//create a final class
+    final class FinalClass{
+    public final void display(){
+        System.out.println("The is a final method.");
+    }
+}
+//try t extend the final class
+class Main extends Finalclass{
+    public void display(){
+        System.out.println("The final method is overriden.");
+        
+    }
+    public static void main(String[]args){
+        Main obj=new Main();
+        obj.display();
+    }
+    }
