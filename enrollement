@@ -1,0 +1,24 @@
+import java.util.*;
+public class Example
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+Scanner sc1=new Scanner(System.in);
+System.out.println("Enter name");
+String name=sc.nextLine();
+
+System.out.println("Enter year");
+int i=sc.nextInt();
+
+String year=String.valueOf(i);
+System.out.println("Enter enrollement no");
+
+String enrollement =sc1.nextLine();
+String e=enrollement.substring(1,4);
+
+String joinedString=(name.concat(year)).concat(enrollement);
+System.out.println("joined String:"+joinedString);
+
+}
+}
