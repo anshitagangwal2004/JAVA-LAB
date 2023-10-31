@@ -1,0 +1,11 @@
+public class Main extends Thread{
+public static void main(String[]args){
+Main m1 = new Main();
+m1.start();
+System.out.println("the code is outside");}
+
+
+public void run(){
+System.out.println(" thread running");
+}
+}
