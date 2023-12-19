@@ -1,0 +1,19 @@
+class MyData {
+    Integer i;
+    public void set (Integer i1)
+    {
+        i=i1;
+    }
+    public Integer get ()
+    {
+        return i;
+    }
+}
+    public class Example{
+        public static void main (String[] args){
+        MyData m = new MyData();
+        Integer k = new Integer(5);
+        m.set(k);
+        m.get();
+}
+}
